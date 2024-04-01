@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.hm_2_month7.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentSecundomer"
+            app:destination="@id/fragmentSecundomer" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentTimer"
+            app:destination="@id/fragmentTimer" />
+        <action
+            android:id="@+id/action_mainFragment_to_fragmentAlarm"
+            app:destination="@id/fragmentAlarm" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecundomer"
+        android:name="com.example.hm_2_month7.FragmentSecundomer"
+        android:label="fragment_secundomer"
+        tools:layout="@layout/fragment_secundomer" />
+    <fragment
+        android:id="@+id/fragmentTimer"
+        android:name="com.example.hm_2_month7.FragmentTimer"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
+    <fragment
+        android:id="@+id/fragmentAlarm"
+        android:name="com.example.hm_2_month7.FragmentAlarm"
+        android:label="fragment_alarm"
+        tools:layout="@layout/fragment_alarm" />
+
+</navigation>
